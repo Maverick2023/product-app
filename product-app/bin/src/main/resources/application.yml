@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    jndi-name: jdbc/dsSymPrincipal
+    testOnBorrow: true
+    removeAbandonedTimeout: 1800
+    removeAbandoned: true
+    validationQuery: SELECT 1 FROM DUAL
+    logAbandoned: true
+    minEvictableIdleTimeMillis: 60000
+    defaultReadOnly: false
+    maxWait: 60000
+    maxIdle: 30
+    minIdle: 10
+    maxActive: 50
+    initialSize: 1
+  config:
+    import: classpath:sym_batch/sym_batch.properties
+
+sym-batch:
+  version: @project.version@
+  name: @project.name@
+
+    

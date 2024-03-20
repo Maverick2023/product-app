@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/sym_batch">
+	<ResourceLink global="jdbc/dsSymPrincipal" name="jdbc/dsSymPrincipal" type="javax.sql.DataSource"/>
+</Context>
